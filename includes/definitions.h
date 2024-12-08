@@ -1,1 +1,30 @@
-// Definitions
+#define COMMAND_AUTH_REQ "auth_req"
+#define COMMAND_AUTH_OK "auth_ok"
+#define COMMAND_AUTH_ERROR "auth_error"
+#define COMMAND_CLOSE "close"
+
+#define SERVER_STATUS_AUTH_REQ "auth_req"
+#define SERVER_STATUS_AUTH_OK "auth_ok"
+#define SERVER_STATUS_AUTH_ERROR "auth_err"
+#define SERVER_STATUS_CLOSE "close_req"
+#define SERVER_STATUS_OK "cmd_ok"
+#define SERVER_STATUS_ERROR "cmd_error"
+
+#define MESSAGE_CONNECTION_ERROR "An error occurred while connecting to server."
+#define MESSAGE_CONNECTED "Connected."
+#define MESSAGE_AUTHENTICATION_REQUIRED "Authentication Required."
+#define MESSAGE_AUTHENTICATION_FAILED "Authentication Failed."
+#define MESSAGE_AUTHENTICATED "Authenticated."
+#define MESSAGE_UNAUTHENTICATED "Unauthenticated."
+#define MESSAGE_CONNECTION_CLOSED "Connection Closed"
+#define MESSAGE_DEFINE_USERNAME "Please define server username: "
+#define MESSAGE_DEFINE_PASSWORD "Please define server password: "
+#define MESSAGE_ENTER_USERNAME "Please enter username: "
+#define MESSAGE_ENTER_PASSWORD "Please enter password: "
+#define MESSAGE_READY_FOR_COMMANDS "Ready to execute commands."
+#define MESSAGE_COMMAND "Command: "
+
+
+#define MESSAGE_SERVER_LISTENING "Server Listening ..."
+#define MESSAGE_WELCOME "Welcome :)"
+#define MESSAGE_BYE "Bye :)"
