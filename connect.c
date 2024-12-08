@@ -25,7 +25,6 @@ int main(int argc, char **argv){
     } else {
         printMessage(MESSAGE_CONNECTED, 1);
     }
-    printMessage("Hello", 1);
 
     // ################ Authentication Mode ################    
     while(1){

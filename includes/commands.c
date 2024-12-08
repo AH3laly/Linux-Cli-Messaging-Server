@@ -17,6 +17,7 @@ void execute(char *commandName, char *result){
         if(equals(commandName, commands[i].name)){
             (commands[i].ptr)(result);
             strcat(result, "\n");
+            printMessage(MESSAGE_COMMAND_DONE, 1);
             return;
         }
     }
@@ -25,7 +26,8 @@ void execute(char *commandName, char *result){
 }
 
 void command_default(char * result){
-    strcpy(result, "Command Not Found.");
+    strcpy(result, MESSAGE_COMMAND_NOT_FOUND);
+    printMessage(MESSAGE_COMMAND_NOT_FOUND, 1);
 }
 
 void command_help(char * result){

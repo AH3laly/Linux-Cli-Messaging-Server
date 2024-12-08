@@ -23,7 +23,8 @@
 #define MESSAGE_ENTER_PASSWORD "Please enter password: "
 #define MESSAGE_READY_FOR_COMMANDS "Ready to execute commands."
 #define MESSAGE_COMMAND "Command: "
-
+#define MESSAGE_COMMAND_NOT_FOUND "Command Not Found."
+#define MESSAGE_COMMAND_DONE "Done."
 
 #define MESSAGE_SERVER_LISTENING "Server Listening ..."
 #define MESSAGE_WELCOME "Welcome :)"

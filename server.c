@@ -96,6 +96,9 @@ int main(int argc, char **argv){
                 if(equals(client_message, COMMAND_CLOSE)){
                     // Close command requested by the client
                     printMessage(MESSAGE_BYE, 1);
+                    strcpy(command_result, MESSAGE_BYE);
+                    strcat(command_result, "\n");
+                    send(client_socket, command_result, sizeof(command_result), 0);
                     close(client_socket);
                     break;
                 } else {
@@ -103,8 +106,6 @@ int main(int argc, char **argv){
                     execute(client_message, command_result);
                     // Send the command result back to the client
                     send(client_socket, command_result, sizeof(command_result), 0);
-
-                    printMessage(command_result, 0);
                 }
 
                 // Clean Buffer
